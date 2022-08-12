@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "7b6bd298-3864-4aa0-9a8d-bfaf66392fcf",
+		"name": "JenkinsTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10641156"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.log(\"-------Login succcessful --------\")\r",
+							"setTimeout(() => {  console.log(\"--!\"); }, 2000);\r",
+							"setTimeout(() => {  console.log(\"-------Hacking commencing --------\"); }, 3000)\r",
+							"setTimeout(() => {  console.log(\"--!\"); }, 5000);\r",
+							"setTimeout(() => {  console.log(\"-----Updating salary info!\"); }, 7000);\r",
+							"setTimeout(() => {  console.log(\"--!\"); }, 8000);\r",
+							"setTimeout(() => {  console.log(\"--!\"); }, 10000);\r",
+							"setTimeout(() => {  console.log(\"------Salary augmented to N5,000,000------\"); }, 12000);\r",
+							"setTimeout(() => {  console.log(\"------ Hacking complete -------!\"); }, 11000);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.assurdly.com/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"assurdly",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
